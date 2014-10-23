@@ -1,0 +1,632 @@
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap-3.1.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/user.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="JavaScript/jqueryui.js"></script>
+<script src="css/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="step1();">  
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project</a>
+    </div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+			<li><a href="#"><span class="glyphicon glyphicon-search"></span>Search</a></li>
+			</ul>
+			
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-user"></span>User <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+  
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+<div class="rows pull-right" style="padding-bottom:20px;">
+<a href="#" class="btn btn-xs btn-success active"><span class="glyphicon glyphicon-user"></span> Create User</a>
+
+<a href="#" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-plus"></span> Create Entity</a>
+</div>
+</div>
+
+
+
+<div class="container" >
+	<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<div class="row">
+							<div class="col-xs-6">
+								<h5><span class="glyphicon glyphicon-user"></span> User Registration</h5>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+	<div class="row" >
+        <div class="col-xs-12">
+            <ul class="nav nav-pills nav-justified thumbnail"  style="border:none;">
+                <li id="step1title"  class="active"><a href="user.html">
+                    <h4 class="list-group-item-heading">Step 1</h4>
+                    <p class="list-group-item-text">Personal Details</p>
+                </a></li>
+                <li id="step2title"><a href="useraccount.html">
+                    <h4 class="list-group-item-heading">Step 2</h4>
+                    <p class="list-group-item-text">Setup Account</p>
+                </a></li>
+                <li id="step3title"><a href="usermembership.html">
+                    <h4 class="list-group-item-heading">Step 3</h4>
+                    <p class="list-group-item-text">Membership Configuration</p>
+                </a></li>
+            </ul>
+			
+				<div class="alert alert-danger">Display Error messages</div>
+				<div class="alert alert-warning">* marked fields are mandatory</div>
+		<!--body here-->
+			 <div class="row">
+			<div class="pull-left">
+			<form class="form-horizontal" role="form">
+			
+			
+			
+			
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		
+			<div id="step1">
+			
+			
+			
+			<!--Personal info div starts here-->
+				 <legend style="padding-left:5px;">Personal Details</legend>
+			
+			     <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Name</label>
+            <div class="col-sm-2">
+              <select name="title" class="form-control">
+                    <option>Mr.</option>
+                    <option>Ms.</option>
+                    <option>Mrs.</option>
+                  </select>				   
+            </div>
+			 <div class="col-sm-2">
+			<input type="text" name="firstname" placeholder="First" class="form-control">
+			</div>
+			 <div class="col-sm-2">			 
+				    <input type="text" name="middlename" placeholder="Middle" class="form-control">
+			</div>
+			<div class="col-sm-2">			 
+				    <input type="text" name="lastname" placeholder="Last" class="form-control">
+			</div>*
+          </div>
+			
+			  <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Nick name</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Other name" class="form-control" name="nickname">
+            </div>
+          </div>
+		  
+		  
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Gender</label>
+            <div class="col-sm-8">
+              <select class="form-control" name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                  </select>				   
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Date of birth</label>
+            <div class="col-sm-2">
+              <select class="form-control" name="dobdate">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					 <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					 <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+                  </select>	
+            </div>
+			<div class="col-sm-3">
+              <select class="form-control" name="monthdob">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+                  </select>	
+            </div>
+			<div class="col-sm-3">
+              <select class="form-control" name="yeardob">
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+					<option>2011</option>
+					<option>2010</option>
+					<option>2009</option>
+					<option>2008</option>
+					<option>2007</option>
+					<option>2006</option>
+					<option>2005</option>
+					<option>2004</option>
+					<option>2003</option>
+					<option>2002</option>
+					<option>2001</option>
+					<option>2000</option>
+					<option>1999</option>
+					<option>1998</option>
+					<option>1997</option>
+					<option>1996</option>
+					<option>1995</option>
+					<option>1994</option>
+					<option>1993</option>
+                  </select>	
+            </div>*
+          </div>
+			 <legend style="padding-left:5px;">Contact Details</legend>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput" required name="email">Email</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="email@example.com" class="form-control">
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Alternet Email</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="email@example.com" class="form-control" name="alternateemail">
+            </div>
+		</div>
+		
+		  <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Mobile home</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="111-111-1111" class="form-control" name="mobilehome">
+            </div>*
+          </div>
+
+			<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Mobile work</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="111-111-1111" class="form-control" name="mobilework">
+            </div>
+          </div>
+		  <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Phone home</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="00000-0000" class="form-control" name="phonehome">
+            </div>
+          </div>
+		  <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Phone Work</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="00000-0000" class="form-control" name="phonework">
+            </div>
+          </div>
+	
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Fax</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="9604xxxxxx" class="form-control" name="fax">
+            </div>
+          </div>
+			
+		
+		<!--personal info div ends here-->
+			 <legend style="padding-left:5px;">Address Details</legend>
+			<!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Address type</label>
+            <div class="col-sm-8">
+              <select class="form-control" name="addresstype">
+                    <option>Home</option>
+                    <option>Work</option>
+                    <option>Other</option>
+                  </select>
+            </div>*
+          </div>
+		  
+		  
+		  <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Unit no</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Apartment/House number" class="form-control" name="unitno">
+            </div>*
+          </div>
+		  
+		  
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Line 1</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Street name" class="form-control" name="line1">
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Line 2</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Near by area" class="form-control" name="line2">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">City</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="City" class="form-control" name="city">
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">State</label>
+            <div class="col-sm-3">
+              <input type="text" placeholder="State" class="form-control" name="state">
+            </div>
+
+            <label class="col-sm-2 control-label" for="textinput">Postal code</label>
+            <div class="col-sm-3">
+              <input type="text" placeholder="Post Code" class="form-control" name="postalcode">
+            </div>*
+          </div>
+
+
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Country</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Country" class="form-control" name="country">
+            </div>*
+          </div>
+
+		
+			</div>
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		
+			<div style="width:750;" id="step2">
+		
+		<legend style="padding-left:5px;">Fill Account Details</legend>		
+			
+		 			
+			 <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Card number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Enter card number" class="form-control" name="cardnumber">
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Account number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Enter account number" class="form-control" name="accountnumber">
+            </div>
+		</div>
+			
+				 <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Date Joined</label>
+            <div class="col-sm-2">
+              <select class="form-control" name="joindate">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					 <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					 <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+                  </select>	
+            </div>
+			<div class="col-sm-3">
+              <select class="form-control" name="joinmonth">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+                  </select>	
+            </div>
+			<div class="col-sm-3">
+              <select class="form-control" name="joinyear">
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+					<option>2011</option>
+					<option>2010</option>
+					<option>2009</option>
+					<option>2008</option>
+					<option>2007</option>
+					<option>2006</option>
+					<option>2005</option>
+					<option>2004</option>
+					<option>2003</option>
+					<option>2002</option>
+					<option>2001</option>
+					<option>2000</option>
+					<option>1999</option>
+					<option>1998</option>
+					<option>1997</option>
+					<option>1996</option>
+					<option>1995</option>
+					<option>1994</option>
+					<option>1993</option>
+                  </select>	
+            </div>*
+          </div>
+		
+			 <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">City joined</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control" name="joincity">
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Country joined</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control" name="joincountry">
+            </div>
+		</div>
+		
+		<legend style="padding-left:5px;">Upload Identification Proof</legend>	
+			
+			<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Social security number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control" name="socialsecuritynum">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Country of Birth</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control" name="countryofbirth">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">ID type</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control" name="idtype">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Upload ID</label>
+            <div class="col-sm-8">
+              <input type="file" class="form-control" name="uploadid">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control" name="idnumber">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Issue date</label>
+            <div class="col-sm-3">
+              <input type="text" placeholder="MM/DD/YYYY" class="form-control" name="idissuedate">
+            </div>
+
+            <label class="col-sm-2 control-label" for="textinput">Expire date</label>
+            <div class="col-sm-3">
+              <input type="text" placeholder="MM/DD/YYYY" class="form-control" name="idexpiredate">
+            </div>*
+          </div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Additional Notes</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" name="additionalnotes"></textarea>
+            </div>
+		</div>	
+		
+		
+		</div>
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<div style="width:750;" id="step3">
+		
+		 <legend style="padding-left:5px;">Membership Details</legend>
+			
+			     
+			  <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Account Category</label>
+            <div class="col-sm-8">
+				<select class="form-control" name="membershiptype">
+                    <option>Walk-in</option>
+                    <option>VIP</option>
+                    <option>Gold</option>
+                  </select>
+            </div>
+          </div>
+		  
+		  <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Status</label>
+            <div class="col-sm-8">
+				<select class="form-control" name="accountstatus">
+                    <option>Active</option>
+                    <option>On hold</option>                    
+                  </select>
+            </div>
+          </div>
+		  
+		  <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Status Notes</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" name="statusnotes"></textarea>
+            </div>
+			</div>	
+			
+				 <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Refered by</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="How did you heard about us?" class="form-control" name="reference">
+            </div>
+          </div>
+				  
+			</form>
+			</div>
+			</div>
+			
+			</div>
+			<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+		
+		
+		
+		
+			</form>
+			</div>
+
+			
+			
+			
+        </div>		
+	</div>
+	
+		<div class="panel-footer">
+				
+				<div class="row text-center">
+				<div  id="btncompletereg" class="col-xs-2 pull-right">
+					<input type="submit" value="Complete Registration" class="btn btn-labeled btn-success col-sm-12" />
+                
+				</div>
+					<div id="btnnext"  class="col-xs-2 pull-right">
+										 <button type="button" onclick="btnnextstep();" class="btn btn-labeled btn-info col-sm-12">
+                <span class="btn-label">
+                Next <i class="glyphicon glyphicon-chevron-right"></i></span></button>					
+           
+						</div>
+					<div  id="btnback"  class="col-xs-2 pull-right" >
+							 <button type="button" onclick="btnbackstep();" class="btn btn-labeled btn-info col-sm-12">
+                <span class="btn-label"> <i class="glyphicon glyphicon-chevron-left"></i></span>
+                Back</button>				
+                  </div>							
+					</div>				
+					</div>
+				</div>
+	</div>
+</body>  
+</html>

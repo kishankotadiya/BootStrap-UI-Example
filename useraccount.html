@@ -1,0 +1,297 @@
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap-3.1.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/user.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="css/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>  
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project</a>
+    </div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+			<li><a href="#"><span class="glyphicon glyphicon-search"></span>Search</a></li>
+			</ul>
+			
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+				
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-user"></span>User <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+  
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+<div class="rows pull-right" style="padding-bottom:20px;">
+<a href="#" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-user"></span> Create User</a>
+
+<a href="#" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-plus"></span> Create Entity</a>
+</div>
+</div>
+
+
+<div class="container" >
+	<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<div class="row">
+							<div class="col-xs-6">
+								<h5><span class="glyphicon glyphicon-user"></span> User Registration</h5>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+	<div class="row" >
+        <div class="col-xs-12">
+            <ul class="nav nav-pills nav-justified thumbnail"  style="border:none;">
+                <li><a href="user.html">
+                    <h4 class="list-group-item-heading">Step 1</h4>
+                    <p class="list-group-item-text">Personal Details</p>
+                </a></li>
+                <li   class="active"><a href="useraccount.html">
+                    <h4 class="list-group-item-heading">Step 2</h4>
+                    <p class="list-group-item-text">Setup Account</p>
+                </a></li>
+                <li><a href="usermembership.html">
+                    <h4 class="list-group-item-heading">Step 3</h4>
+                    <p class="list-group-item-text">Membership Configuration</p>
+                </a></li>
+            </ul>
+			
+				<div class="alert alert-danger">Display Error messages</div>
+				<div class="alert alert-warning">* marked fields are mandatory</div>
+		<!--body here-->
+			 <div class="row ">
+			<div class="pull-left">
+			<form class="form-horizontal " style="width:750px;" role="form">
+			<legend style="padding-left:5px;">Fill Account Details</legend>		
+			
+		 			
+			 <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Card number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Enter card number" class="form-control">
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Account number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="Enter account number" class="form-control">
+            </div>
+		</div>
+			
+				 <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Date Joined</label>
+            <div class="col-sm-2">
+              <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					 <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					 <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+                  </select>	
+            </div>
+			<div class="col-sm-3">
+              <select class="form-control">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+                  </select>	
+            </div>
+			<div class="col-sm-3">
+              <select class="form-control">
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+					<option>2011</option>
+					<option>2010</option>
+					<option>2009</option>
+					<option>2008</option>
+					<option>2007</option>
+					<option>2006</option>
+					<option>2005</option>
+					<option>2004</option>
+					<option>2003</option>
+					<option>2002</option>
+					<option>2001</option>
+					<option>2000</option>
+					<option>1999</option>
+					<option>1998</option>
+					<option>1997</option>
+					<option>1996</option>
+					<option>1995</option>
+					<option>1994</option>
+					<option>1993</option>
+                  </select>	
+            </div>*
+          </div>
+		
+			 <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">City joined</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control">
+            </div>*
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Country joined</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control">
+            </div>
+		</div>
+		
+		<legend style="padding-left:5px;">Upload Identification Proof</legend>	
+			
+			<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Social security number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Country of Birth</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">ID type</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Upload ID</label>
+            <div class="col-sm-8">
+              <input type="file" class="form-control">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Number</label>
+            <div class="col-sm-8">
+              <input type="text" placeholder="" class="form-control">
+            </div>
+		</div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Issue date</label>
+            <div class="col-sm-3">
+              <input type="text" placeholder="MM/DD/YYYY" class="form-control">
+            </div>
+
+            <label class="col-sm-2 control-label" for="textinput">Expire date</label>
+            <div class="col-sm-3">
+              <input type="text" placeholder="MM/DD/YYYY" class="form-control">
+            </div>*
+          </div>
+		
+		<div class="form-group">
+            <label class="col-sm-3 control-label" for="textinput">Additional Notes</label>
+            <div class="col-sm-8">
+              <textarea class="form-control"></textarea>
+            </div>
+		</div>	
+			
+			</form>
+			</div>
+			</div>
+			
+				
+
+		
+			
+        </div>		
+	</div>
+	</div>
+		<div class="panel-footer">
+					<div class="row text-center">
+						<div class="col-xs-9">
+							
+						</div>
+					
+							 <button type="button" class="btn btn-labeled btn-info col-sm-2">
+              
+                Next  <span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span></button>
+            <br />
+						</div>
+					</div>
+				</div>
+	</div>
+</div>
+
+</body>  
+</html>
